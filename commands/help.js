@@ -61,7 +61,7 @@ function getLagosTime() {
     try {
         // Try using Intl API for proper timezone handling
         const options = {
-            timeZone: 'Africa/Lagos',
+            timeZone: 'Africa/Harare',
             hour12: false,
             hour: 'numeric',
             minute: 'numeric'
@@ -104,7 +104,7 @@ async function helpCommand(sock, chatId, message) {
 ├◆ ᴜsᴇʀ: ${message.pushName}
 ├◆ ᴘʟᴀɴ: Premium ${'✓'}
 ├◆ ᴠᴇʀsɪᴏɴ: ${settings.version || '3.0.0'}
-├◆ ᴛɪᴍᴇ: ${formatLagosTime()} (Africa/Lagos)
+├◆ ᴛɪᴍᴇ: ${formatLagosTime()} (Africa/Harare)
 ├◆ ᴜᴘᴛɪᴍᴇ: ${formatUptime(process.uptime())}
 ├◆ ᴄᴏᴍᴍᴀɴᴅs: ${countCommands()}
 ├◆ ᴛᴏᴅᴀʏ: ${new Date().toLocaleDateString('en-US', {weekday: 'long'})}
